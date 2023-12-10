@@ -1,0 +1,82 @@
+.body{
+    /* background: "img.jpg"; */
+    background-color:aquamarine;
+}
+
+.master_container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.quote_container{
+    position: relative;
+    top: 200px;
+    background-color: rgb(195, 227, 227);
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+    /* border: 10px; */
+    /* border-color: white; */
+}
+.author{
+    /* padding: 10px; */
+    display: block;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+.quote{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.change{
+    background-color: rgb(167, 135, 135);
+    border-radius: 2px;
+    border-style:groove;
+    font-family: monospace;
+    transition-delay: 0.1s;
+    /* border:none; */
+}
+.change:hover{
+    cursor: pointer;
+
+    background-color: rgb(137, 115, 115);
+}
+
+/* .change:focus{
+    background-color: rgb(114, 93, 93);
+} */
+
+blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+}
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    float:right;
+    font-size:6em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+blockquote footer {
+    padding: 0 2em 0 0;
+    text-align:right;
+}
+blockquote cite:before {
+    content: "\2013";
+}
+
